@@ -6,13 +6,15 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class TestUtilities {
 
 		WebDriver driver;
-		ChromeOptions opt;		
+		ChromeOptions opt;
+		
 		
 		//Constructor		
 	
 		 public TestUtilities(WebDriver driver, ChromeOptions opt){
 			this.driver =driver;
-			this.opt=opt;					
+			this.opt=opt;
+			
 		
 		 }
 		
