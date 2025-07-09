@@ -41,15 +41,21 @@ public class VerraProjectHub {
 	  System.out.println("URL Opened");
 	  driver.manage().window().maximize();
 	  System.out.println("Window Maximized");
+	  
+	  //Full page Screenshot
 	  TakesScreenshot ts=(TakesScreenshot) driver;
 	  File source_file=ts.getScreenshotAs(OutputType.FILE);
 	  File target_file=new File(System.getProperty("user.dir")+"\\screenshots_verra\\fullpage.png");
 	  source_file.renameTo(target_file);
+	  
+	  
 	  driver.findElement(By.xpath("//li[@id='mega-menu-item-17']//a[@class='mega-menu-link'][normalize-space()='Projects']")).click();
 	  System.out.println("Projects tab clicked");
 	  driver.findElement(By.xpath("//li[@id='mega-menu-item-57803']//a[@class='mega-menu-link'][normalize-space()='Verra Project Hub']")).click();
 	  System.out.println("Verra Project Hub clicked");
-	  Thread.sleep(3000);	  
+	  Thread.sleep(3000);
+	  
+	  //Logo Screen shots
 	  WebElement TS=driver.findElement(By.xpath("//img[@alt='Company Logo']"));
 	  File sourcefile=TS.getScreenshotAs(OutputType.FILE);
 	  File targetfile=new File(System.getProperty("user.dir")+"\\screenshots_verra\\logo.png");

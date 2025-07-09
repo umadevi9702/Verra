@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Projects.VerraProjectHub">
+      <class name="Latest.VerraViews">
         <methods>
-          <include name="beforeMethod"/>
           <include name="A"/>
-          <include name="afterMethod"/>
         </methods>
-      </class> <!-- Projects.VerraProjectHub -->
+      </class> <!-- Latest.VerraViews -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
